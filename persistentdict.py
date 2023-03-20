@@ -6,6 +6,7 @@ import typing
 from collections import UserDict
 from multiprocessing import Lock
 
+__author__ = "Quinten"
 
 class Format:
     """A class that represents a format that can be used to save and load a dictionary."""
