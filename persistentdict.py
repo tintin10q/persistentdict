@@ -119,7 +119,7 @@ class persistentdict(UserDict):
         if not os.path.exists(persistentdict.default_backup_path):
             os.mkdir(persistentdict.default_backup_path)
 
-        backup_path = os.path.join(self.backup_path, self.filename, timestring, f".{self.format}")
+        backup_path = os.path.join(self.backup_path, self.filename, timestring, f".{self.format.__name__}")
 
         with open(backup_path, 'w+') as f:
             self.format.dump(self.data, f, **self.dump_kwargs)
