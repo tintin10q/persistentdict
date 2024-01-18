@@ -1,3 +1,5 @@
+.idea/
+
 # Ignore the output files
 *.toml
 *.json
