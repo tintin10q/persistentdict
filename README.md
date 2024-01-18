@@ -3,9 +3,9 @@
 Persistent dict is a context manager that loads and stores a dict in a file automatically. Inspired by my
 [python_json_database_manager](https://github.com/tintin10q/python_json_database_manager) repo (this is just a simpler version)
 
-For proper toml integration, you need to install toml package. The standard library toml module is not enough as it can
-only load toml files but not create them. The persistant dict works with anything that implements my Format abstract base class. 
-That means any object with a `dump` and `load` method and a `__name__` attribute.
+For proper toml integration, you need to install the [toml](https://pypi.org/project/toml/) package. The standard library tomllib module (added in 3.11) is not enough as it can
+only load toml files but not create them. The persistant dict works with anything that implements my `Format` abstract base class. 
+That means any object with a `dump` and `load` method and a `__name__` attribute will work as a format.
 
 ## Usage
 
