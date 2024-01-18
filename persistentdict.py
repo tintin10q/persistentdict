@@ -1,3 +1,10 @@
+"""
+persistentdict.py
+This persistentdict.py file is created by Quinten (tintin10q).
+
+It is distributed under the GNU GENERAL PUBLIC LICENSE V3.
+"""
+
 import os
 import time
 import json
@@ -6,7 +13,7 @@ import typing
 from collections import UserDict
 from multiprocessing import Lock
 
-__author__ = "Quinten"
+__author__ = "Quinten (tintin10q)"
 
 class Format:
     """A class that represents a format that can be used to save and load a dictionary."""
