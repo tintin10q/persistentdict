@@ -28,6 +28,7 @@ A dictionary that persists to a file on disk.
 A nice tip is to do partial application of the function arguments. For instance if you only want to read toml files and always use locks you could use `partial` from functools to do this:
 
 ```python
+from persistentdict import persistentdict
 from functools import partial
 import toml
 
