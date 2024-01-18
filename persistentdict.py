@@ -114,12 +114,12 @@ class persistentdict(UserDict):
         """
         Makes backups in a backup_path with the current date
         """
-        timestring = time.strftime("-%Y%m%d-%H%M%S")
+        timestring = time.strftime("%Y_%m_%d-%H:%M:%S")
 
         if not os.path.exists(persistentdict.default_backup_path):
             os.mkdir(persistentdict.default_backup_path)
 
-        backup_path = os.path.join(self.backup_path, self.filename, timestring, f".{self.format.__name__}")
+        backup_path = os.path.join(self.backup_path, f"{timestring}-{self.filename}")
 
         with open(backup_path, 'w+') as f:
             self.format.dump(self.data, f, **self.dump_kwargs)
