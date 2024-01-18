@@ -19,10 +19,10 @@ class Format:
     """A class that represents a format that can be used to save and load a dictionary."""
 
     def dump(self, data, file: typing.TextIO, **dump_kwargs):
-        raise NotImplemented("You must implement the dump method for your format.")
+        raise NotImplementedError("You must implement the dump method for your format.")
 
     def load(self, file: typing.TextIO) -> dict:
-        raise NotImplemented("You must implement the load method for your format.")
+        raise NotImplementedError("You must implement the load method for your format.")
 
     __name__: str = "unknown"
 
