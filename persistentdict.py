@@ -3,6 +3,8 @@ persistentdict.py
 This persistentdict.py file is created by Quinten (tintin10q).
 
 It is distributed under the GNU GENERAL PUBLIC LICENSE V3.
+
+Find the source and test in the repo at: https://github.com/tintin10q/persistentdict/
 """
 
 import os
