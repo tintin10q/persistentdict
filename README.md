@@ -52,5 +52,5 @@ That means any object with a `dump` and `load` method and a `__name__` attribute
 # Installation
 
 ```shell
-wget https://github.com/tintin10q/persistentdict/blob/production/persistentdict.py
+wget https://raw.githubusercontent.com/tintin10q/persistentdict/refs/heads/production/persistentdict.py
 ```
