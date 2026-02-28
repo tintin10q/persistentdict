@@ -48,3 +48,9 @@ only load toml files but not create them.
 
 The persistantdict works with anything that implements my `Format` abstract base class. 
 That means any object with a `dump` and `load` method and a `__name__` attribute will work as a format.
+
+# Installation
+
+```shell
+wget https://github.com/tintin10q/persistentdict/blob/production/persistentdict.py
+```
